@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Heading TextView -->
+    <TextView
+        android:id="@+id/notesHeadingTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="NOTES"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:fontFamily="@string/sans_serif"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="10dp"/>
+
+    <!-- RecyclerView -->
+
+    <!-- FloatingActionButton -->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/notesHeadingTextView"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="8dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        app:backgroundTint="@color/blue"
+        android:src="@drawable/baseline_add_24" />
+</RelativeLayout>
